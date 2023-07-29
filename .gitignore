@@ -1,0 +1,8 @@
+#Global
+#Bear make autocompletion json
+compile_commands.json
+*.o
+.cache
+#ex00
+BraiiiiiiinnnzzzZ
+#ex01
