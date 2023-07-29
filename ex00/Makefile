@@ -2,7 +2,9 @@ NAME = BraiiiiiiinnnzzzZ
 
 # Source files
 SOURCE_FOLDER = src/
-SOURCE_FILES = main.cpp
+SOURCE_FILES = main.cpp\
+							 newZombie.cpp\
+							 randomChump.cpp
 SOURCES = $(addprefix $(SOURCE_FOLDER), $(SOURCE_FILES))
 
 # Objects
