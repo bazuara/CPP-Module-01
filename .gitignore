@@ -1,6 +1,7 @@
 #Globals
 *.o
 .cache
+*.pdf
 #Bear make autocompletions json
 compile_commands.json
 #ex00
