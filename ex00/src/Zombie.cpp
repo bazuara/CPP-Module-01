@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.h                                           :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bazuara <bazuara@student.42madrid.com>     +#+  +:+       +#+        */
+/*   By: bazuara <bazuara@student.42madrid.co       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 14:09:47 by bazuara           #+#    #+#             */
-/*   Updated: 2023/07/31 14:11:03 by brunoazu         ###   ########.fr       */
+/*   Created: 2023/07/31 14:06:35 by bazuara           #+#    #+#             */
+/*   Updated: 2023/07/31 14:06:41 by bazuara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_H
-#define ZOMBIE_H
-#include <iostream>
-#include <Zombie.hpp>
+#include <zombie.h>
 
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
-#endif
-
+Zombie::~Zombie() {
+  std::cout << "Zombie " << name << " has been destroyed" << std::endl;
+}
+void Zombie::announce() {
+  std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}

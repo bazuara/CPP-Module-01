@@ -4,7 +4,8 @@ NAME = BraiiiiiiinnnzzzZ
 SOURCE_FOLDER = src/
 SOURCE_FILES = main.cpp\
 							 newZombie.cpp\
-							 randomChump.cpp
+							 randomChump.cpp\
+							 Zombie.cpp
 SOURCES = $(addprefix $(SOURCE_FOLDER), $(SOURCE_FILES))
 
 # Objects
