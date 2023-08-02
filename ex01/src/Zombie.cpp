@@ -6,16 +6,15 @@
 /*   By: bazuara <bazuara@student.42madrid.co       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 14:06:35 by bazuara           #+#    #+#             */
-/*   Updated: 2023/07/31 18:29:15 by bazuara          ###   ########.fr       */
+/*   Updated: 2023/08/02 11:57:56 by bazuara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <zombie.h>
+#include <Zombie.hpp>
 
 // Zombie::Zombie(std::string name) : name(name) {}
 
-Zombie::Zombie(){
-
+Zombie::Zombie() {
 }
 
 Zombie::Zombie(std::string name) {
