@@ -2,7 +2,8 @@ NAME = SedIsForLoosers
 
 # Source files
 SOURCE_FOLDER = src/
-SOURCE_FILES = main.cpp
+SOURCE_FILES = main.cpp\
+							 SedIsForLoosers.cpp
 SOURCES = $(addprefix $(SOURCE_FOLDER), $(SOURCE_FILES))
 
 # Objects
