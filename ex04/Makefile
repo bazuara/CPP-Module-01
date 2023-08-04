@@ -43,7 +43,7 @@ re:	fclean all
 
 # Rule to test norminette
 normi:	
-	*cpplint $(SOURCES) $(HEADERS_FOLDER)*
+	@cpplint $(SOURCES) $(HEADERS_FOLDER)*
 
 # Rule to debug, include norminette and similars
 test: re

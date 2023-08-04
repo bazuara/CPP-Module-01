@@ -6,7 +6,7 @@
 /*   By: bazuara <bazuara@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 19:11:20 by bazuara           #+#    #+#             */
-/*   Updated: 2023/08/03 23:32:39 by bazuara          ###   ########.fr       */
+/*   Updated: 2023/08/04 12:00:41 by bazuara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,12 @@ void sedIsForLoosers(std::string &str_, std::string s1, std::string s2) {
     return;
   if (s1.length() > str_.length() || s2.length() > str_.length())
     return;
-  while (pos != std::string::npos) {
-    pos = str_.find(s1);
-    if (pos >= 0 && pos != std::string::npos) {
+  while (pos < str_.length() + 1) {
+    pos = str_.find(s1, pos);
+    if (pos >= 0 && pos < str_.length() + 1) {
       str_.erase(pos, s1.length());
       str_.insert(pos, s2);
+      pos += s2.length();
     }
   }
 }
