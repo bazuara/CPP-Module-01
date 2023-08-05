@@ -6,7 +6,7 @@
 /*   By: bazuara <bazuara@student.42madrid.co       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 20:37:50 by bazuara           #+#    #+#             */
-/*   Updated: 2023/08/05 21:19:11 by bazuara          ###   ########.fr       */
+/*   Updated: 2023/08/05 21:25:28 by bazuara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,16 @@ Harl::~Harl() {
 }
 
 void Harl::complain(std::string level) {
-  void (Harl::*say)();
+  void (Harl::*say[4])() = {
+    &Harl::debug,
+    &Harl::info,
+    &Harl::warning,
+    &Harl::error
+  };
   std::string type[4] = {"debug", "info", "warning", "error"};
   for (int i = 0; i < 4; i++) {
-  say  = &Harl::debug;
+    (this->*(say[i]))();
   }
-  (this->*say)();
 }
 
 // Private
