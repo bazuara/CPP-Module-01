@@ -49,7 +49,4 @@ normi:
 
 # Rule to debug, include norminette and similars
 test: re
-	@# ./$(NAME)
-	@# ./$(NAME) "not" "enough"
-	@# ./$(NAME) "these" "are" "too" "many" "arguments"
-	./$(NAME) "testfile.txt" "s1" "s2"
+	./$(NAME)
