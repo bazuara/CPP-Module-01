@@ -2,6 +2,8 @@
 *.o
 .cache
 *.pdf
+.vscode
+CPPLINT.cfg
 #Bear make autocompletions json
 compile_commands.json
 #ex00
