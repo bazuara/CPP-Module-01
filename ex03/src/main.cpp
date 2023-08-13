@@ -10,10 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include <HumanA.hpp>
 #include <HumanB.hpp>
 #include <Weapon.hpp>
-#include <iostream>
+
 
 int main(void) {
   Weapon  club1 = Weapon("crude spiked club");

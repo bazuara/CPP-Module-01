@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX03_INCLUDE_WEAPON_HPP_
-#define EX03_INCLUDE_WEAPON_HPP_
+#ifndef WEAPON_HPP_
+#define WEAPON_HPP_
 
 #include <string>
 
@@ -24,4 +24,4 @@ class Weapon {
   void setType(std::string type);
   std::string getType();
 };
-#endif  // EX03_INCLUDE_WEAPON_HPP_
+#endif  // WEAPON_HPP_

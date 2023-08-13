@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX03_INCLUDE_HUMANB_HPP_
-#define EX03_INCLUDE_HUMANB_HPP_
+#ifndef HUMANB_HPP_
+#define HUMANB_HPP_
 
-#include <Weapon.hpp>
 #include <string>
+#include <Weapon.hpp>
 
 class HumanB {
  private:
@@ -27,4 +27,4 @@ class HumanB {
   void setWeapon(Weapon& weaponPtr);
 };
 
-#endif  // EX03_INCLUDE_HUMANB_HPP_
+#endif  // HUMANB_HPP_

@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX03_INCLUDE_HUMANA_HPP_
-#define EX03_INCLUDE_HUMANA_HPP_
+#ifndef HUMANA_HPP_
+#define HUMANA_HPP_
 
-#include <Weapon.hpp>
 #include <string>
+#include <Weapon.hpp>
 
 class HumanA {
  private:
@@ -26,4 +26,4 @@ class HumanA {
   void attack();
 };
 
-#endif  // EX03_INCLUDE_HUMANA_HPP_
+#endif  // HUMANA_HPP_
