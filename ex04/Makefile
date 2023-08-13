@@ -2,8 +2,7 @@ NAME = SedIsForLoosers
 
 # Source files
 SOURCE_FOLDER = src/
-SOURCE_FILES = main.cpp\
-							 SedIsForLoosers.cpp
+SOURCE_FILES = main.cpp
 SOURCES = $(addprefix $(SOURCE_FOLDER), $(SOURCE_FILES))
 
 # Objects
@@ -44,7 +43,7 @@ re:	fclean all
 
 # Rule to test norminette
 normi:	
-	@cpplint $(SOURCES) $(HEADERS_FOLDER)*
+	@cpplint --root=include $(SOURCES) $(HEADERS_FOLDER)*
 
 # Rule to debug, include norminette and similars
 test: re
