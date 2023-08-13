@@ -12,7 +12,7 @@ OBJECTS= $(SOURCE_FILES:.cpp=.o)
 # OBJECTS = $(addprefix $(OBJECT_FOLDER), $(OBJECT_FILES))
 
 # Headers
-HEADERS_FOLDER	= incs/
+HEADERS_FOLDER	= include/
 
 # Flags and output
 CXXFLAGS = -Wall -Wextra -Werror -Wno-c++0x-compat -std=c++98
@@ -45,7 +45,7 @@ re:	fclean all
 
 # Rule to test norminette
 normi:	
-	@cpplint $(SOURCES) $(HEADERS_FOLDER)*
+	@cpplint --root=include $(SOURCES) $(HEADERS_FOLDER)*
 
 # Rule to debug, include norminette and similars
 test: re
