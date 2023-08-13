@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX05_INCLUDE_HARL_HPP_
-#define EX05_INCLUDE_HARL_HPP_
+#ifndef HARL_HPP_
+#define HARL_HPP_
 
 #include <string>
 #include <iostream>
@@ -28,4 +28,4 @@ class Harl {
   void warning(void);
   void error(void);
 };
-#endif  // EX05_INCLUDE_HARL_HPP_
+#endif  // HARL_HPP_
