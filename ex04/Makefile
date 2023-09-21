@@ -20,13 +20,13 @@ all: $(NAME)
 # Rule to build your object files and link them into a binary
 $(NAME): $(OBJECTS)
 	@echo "🚧 Compiling binary... 🚧"
-	@g++ $(OBJECTS) -o $(NAME)
+	@c++ $(OBJECTS) -o $(NAME)
 	@echo "✅ Done!"
 
 #objects
 $(OBJECTS):
 	@echo "🚧 Compiling objects... 🚧"
-	@g++  -c $(SOURCES) $(CXXCFLAGS) -I$(HEADERS_FOLDER)
+	@c++  -c $(SOURCES) $(CXXCFLAGS) -I$(HEADERS_FOLDER)
 	@echo "✅ Done!"
 # Rule to remove object files
 clean:
