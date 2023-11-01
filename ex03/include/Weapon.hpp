@@ -22,6 +22,6 @@ class Weapon {
  public:
   explicit Weapon(std::string type);
   void setType(std::string type);
-  std::string getType();
+  std::string const &getType();
 };
 #endif  // WEAPON_HPP_
