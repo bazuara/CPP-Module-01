@@ -13,7 +13,7 @@
 #include <HumanB.hpp>
 #include <iostream>
 
-HumanB::HumanB(std::string name) : Name(name) {}
+HumanB::HumanB(std::string name) : Name(name), WeaponPtr(NULL) {}
 
 HumanB::~HumanB() {
 }
@@ -23,7 +23,11 @@ void HumanB::setWeapon(Weapon& weaponPtr) {
 }
 
 void HumanB::attack() {
-  std::cout << Name
-    << " attacks with their "
-    << WeaponPtr->getType() << std::endl;
+  if(!WeaponPtr)
+    std::cout << Name
+      << " has no weapon to attack with" << std::endl;
+  else
+    std::cout << Name
+      << " attacks with their "
+      << WeaponPtr->getType() << std::endl;
 }
