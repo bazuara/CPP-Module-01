@@ -63,8 +63,10 @@ int main(int argc, char **argv) {
         std::cout << line << '\n';
         outputFile << line << std::endl;
       }
-      inputFile.close();
-      outputFile.close();
+      if (inputFile.is_open())
+        inputFile.close();
+      if (outputFile.is_open())
+        outputFile.close();
     } else {
       std::cout << "Sorry, something went wrong with your files" << std::endl;
       return 3;
